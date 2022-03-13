@@ -20,7 +20,8 @@ public class WordleInput {
             if (Wordle.words.contains(guessWord)) {
                 String[] str = answer.split("");
                 ArrayList<String> listOfLetters = new ArrayList<>(Arrays.asList(str));
-                System.out.println(answer);
+//                You can see answer by uncommenting it
+//                System.out.println(answer);
                 while (!guessWord.equalsIgnoreCase(answer)) {
                     String[] guessLetters = guessWord.split("");
                     for (int i = 0; i < answer.length(); i++) {
